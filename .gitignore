@@ -1,0 +1,28 @@
+# Local runtime config; commit config.example.json instead.
+config.json
+config.*.json
+!config.example.json
+
+# API/enrichment cache can contain observed callsigns and locations.
+enrich_cache.json
+*cache*.json
+
+# Python / uv local state
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local app/editor/tool state
+.claude/
+.DS_Store
+*.swp
+*.swo
+
+# Runtime logs and temporary files
+*.log
+*.tmp
+tmp/

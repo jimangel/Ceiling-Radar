@@ -1,0 +1,17 @@
+[Unit]
+Description=Ceiling Radar (ADS-B ceiling projection)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/ceiling-radar
+# Console framebuffer (no desktop). For desktop autostart, remove this line.
+Environment=SDL_VIDEODRIVER=kmsdrm
+ExecStart=/usr/local/bin/uv run --project /home/pi/ceiling-radar ceiling_radar.py --config /home/pi/ceiling-radar/config.json
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

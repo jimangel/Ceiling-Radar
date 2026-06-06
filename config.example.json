@@ -1,0 +1,92 @@
+{
+  "feed": {
+    "url": "http://receiver.local/dump1090/data/aircraft.json",
+    "poll_interval": 1.0,
+    "demo": true,
+    "fallback_to_demo": true
+  },
+  "home": {
+    "lat": 0.0,
+    "lon": 0.0
+  },
+  "view": {
+    "range_m": 25000,
+    "north_deg": 0.0,
+    "flip_x": true
+  },
+  "config": {
+    "write_on_start": true,
+    "autosave": true
+  },
+  "lookout": {
+    "enabled": true,
+    "front_yard_deg": 0.0,
+    "near_radius_m": 3200,
+    "max_altitude_ft": 6000,
+    "color": [
+      255,
+      80,
+      40
+    ]
+  },
+  "distance_color": {
+    "enabled": true,
+    "near_color": [
+      40,
+      255,
+      120
+    ],
+    "mid_color": [
+      255,
+      220,
+      40
+    ],
+    "far_color": [
+      255,
+      60,
+      40
+    ]
+  },
+  "display": {
+    "width": 1920,
+    "height": 1080,
+    "fullscreen": true,
+    "fps": 60
+  },
+  "keystone": {
+    "corners": null
+  },
+  "enrich": {
+    "routes": true,
+    "types": false,
+    "route_api": "https://api.adsb.lol/api/0/routeset",
+    "callsign_api": "https://api.adsbdb.com/v0/callsign/",
+    "type_api": "https://opendata.adsb.fi/api/v2/hex/",
+    "aircraft_api": "https://api.adsbdb.com/v0/aircraft/",
+    "min_interval": 2.0,
+    "cache_file": "enrich_cache.json"
+  },
+  "style": {
+    "plane_color": [
+      255,
+      190,
+      70
+    ],
+    "text_color": [
+      235,
+      235,
+      235
+    ],
+    "trail_color": [
+      255,
+      150,
+      40
+    ],
+    "trail_seconds": 75,
+    "cross_marks": true,
+    "plane_size": 34,
+    "label_size": 30,
+    "font_path": null,
+    "glow": true
+  }
+}
