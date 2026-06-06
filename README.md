@@ -48,6 +48,8 @@ When you have a real feed, copy `config.example.json` to `config.json`, edit
 
 ## Hardware
 
+![Hardware setup](plane.png)
+
 | Part | Notes |
 |---|---|
 | Raspberry Pi 5 (Pi 4 also fine) | Runs the renderer |
